@@ -1,0 +1,9 @@
+{  
+  \"projectId\": \"bcaf690d-9092-4594-9b26-20ec8c195634\",  
+  \"createdAt\": 1767415939610,  
+  \"version\": \"1.0\",  
+  \"startupCommands\": [  
+    \"npx next dev\"  
+  ],  
+  \"templateId\": \"nextjs\"  
+} 

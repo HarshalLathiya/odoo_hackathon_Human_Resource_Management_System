@@ -108,7 +108,7 @@ export default function ChangePasswordPage() {
                 value={passwords.current}
                 onChange={(e) => setPasswords({ ...passwords, current: e.target.value })}
                 placeholder="Enter current password"
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent outline-none transition pr-12"
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent outline-none transition pr-12 text-gray-900"
                 required
               />
               <button
@@ -131,7 +131,7 @@ export default function ChangePasswordPage() {
                 value={passwords.new}
                 onChange={(e) => setPasswords({ ...passwords, new: e.target.value })}
                 placeholder="Enter new password"
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent outline-none transition pr-12"
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent outline-none transition pr-12 text-gray-900"
                 required
               />
               <button
@@ -154,7 +154,7 @@ export default function ChangePasswordPage() {
                 value={passwords.confirm}
                 onChange={(e) => setPasswords({ ...passwords, confirm: e.target.value })}
                 placeholder="Confirm new password"
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent outline-none transition pr-12"
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent outline-none transition pr-12 text-gray-900"
                 required
               />
               <button

@@ -139,7 +139,7 @@ export default function AttendancePage() {
               <div className="bg-white rounded-xl border border-gray-200 p-6">
                 <div className="flex items-center justify-between mb-6">
                   <h2 className="text-lg font-semibold text-gray-900">Today&apos;s Attendance</h2>
-                  <span className="text-sm text-gray-500">{format(new Date(), "EEEE, MMMM d, yyyy")}</span>
+                  <span className="text-sm text-gray-900">{format(new Date(), "EEEE, MMMM d, yyyy")}</span>
                 </div>
 
                 <div className="flex items-center gap-6">
@@ -226,13 +226,13 @@ export default function AttendancePage() {
                     <h2 className="text-lg font-semibold text-gray-900">Monthly Attendance</h2>
                   </div>
                   <div className="flex items-center gap-2">
-                    <button onClick={prevMonth} className="p-2 hover:bg-gray-100 rounded-lg transition">
+                    <button onClick={prevMonth} className="p-2 hover:bg-gray-100 rounded-lg transition text-gray-800  ">
                       <ChevronLeft size={20} />
                     </button>
-                    <span className="text-sm font-medium min-w-[120px] text-center">
+                    <span className="text-sm font-medium min-w-[120px] text-center text-gray-800  ">
                       {format(new Date(currentYear, currentMonth - 1), "MMMM yyyy")}
                     </span>
-                    <button onClick={nextMonth} className="p-2 hover:bg-gray-100 rounded-lg transition">
+                    <button onClick={nextMonth} className="p-2 hover:bg-gray-100 rounded-lg transition text-gray-800  ">
                       <ChevronRight size={20} />
                     </button>
                   </div>
@@ -247,12 +247,12 @@ export default function AttendancePage() {
                     <table className="w-full">
                       <thead>
                         <tr className="border-b border-gray-200">
-                          <th className="text-left py-3 px-4 text-sm font-medium text-gray-500">Date</th>
-                          <th className="text-left py-3 px-4 text-sm font-medium text-gray-500">Check In</th>
-                          <th className="text-left py-3 px-4 text-sm font-medium text-gray-500">Check Out</th>
-                          <th className="text-left py-3 px-4 text-sm font-medium text-gray-500">Work Hours</th>
-                          <th className="text-left py-3 px-4 text-sm font-medium text-gray-500">Extra Hours</th>
-                          <th className="text-left py-3 px-4 text-sm font-medium text-gray-500">Status</th>
+                          <th className="text-left py-3 px-4 text-sm font-medium text-gray-900">Date</th>
+                          <th className="text-left py-3 px-4 text-sm font-medium text-gray-900">Check In</th>
+                          <th className="text-left py-3 px-4 text-sm font-medium text-gray-900">Check Out</th>
+                          <th className="text-left py-3 px-4 text-sm font-medium text-gray-900">Work Hours</th>
+                          <th className="text-left py-3 px-4 text-sm font-medium text-gray-900">Extra Hours</th>
+                          <th className="text-left py-3 px-4 text-sm font-medium text-gray-900">Status</th>
                         </tr>
                       </thead>
                       <tbody>
@@ -264,7 +264,7 @@ export default function AttendancePage() {
                           </tr>
                         ) : (
                           monthlyAttendance.map((record) => (
-                            <tr key={record.id} className="border-b border-gray-100">
+                            <tr key={record.id} className="border-b border-gray-100 text-gray-900">
                               <td className="py-3 px-4 text-sm">
                                 {format(new Date(record.date), "MMM d, EEE")}
                               </td>

@@ -82,7 +82,7 @@ export default function LoginPage() {
               value={loginId}
               onChange={(e) => setLoginId(e.target.value)}
               placeholder="Enter your login ID"
-              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent outline-none transition"
+              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent outline-none transition text-gray-900 placeholder:text-gray-500"
               required
             />
           </div>
@@ -98,7 +98,7 @@ export default function LoginPage() {
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 placeholder="Enter your password"
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent outline-none transition pr-12"
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent outline-none transition pr-12 text-gray-900 placeholder:text-gray-500"
                 required
               />
               <button

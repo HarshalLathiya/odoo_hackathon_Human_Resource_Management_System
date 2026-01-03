@@ -81,13 +81,13 @@ export default function PayrollPage() {
             <h1 className="text-2xl font-bold text-gray-900">Payroll Management</h1>
             <div className="flex items-center gap-3">
               <div className="flex items-center gap-2">
-                <button onClick={prevMonth} className="p-2 hover:bg-gray-100 rounded-lg transition">
+                <button onClick={prevMonth} className="p-2 hover:bg-gray-100 rounded-lg transition text-gray-800 ">
                   <ChevronLeft size={20} />
                 </button>
-                <span className="text-sm font-medium min-w-[120px] text-center">
+                <span className="text-sm font-medium min-w-[120px] text-center text-black">
                   {format(new Date(currentYear, currentMonth - 1), "MMMM yyyy")}
                 </span>
-                <button onClick={nextMonth} className="p-2 hover:bg-gray-100 rounded-lg transition">
+                <button onClick={nextMonth} className="p-2 hover:bg-gray-100 rounded-lg transition text-gray-800  ">
                   <ChevronRight size={20} />
                 </button>
               </div>
@@ -173,7 +173,7 @@ export default function PayrollPage() {
                           )}
                           <span className="text-gray-400">/{payroll.working_days}</span>
                         </td>
-                        <td className="py-3 px-4 text-right text-sm font-medium">
+                        <td className="py-3 px-4 text-right text-sm font-medium text-gray-500">
                           ₹{payroll.gross_salary?.toLocaleString()}
                         </td>
                         <td className="py-3 px-4 text-right text-sm text-red-600">

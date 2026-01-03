@@ -384,7 +384,7 @@ function ApplyLeaveModal({
             <select
               value={formData.leave_type_id}
               onChange={(e) => setFormData({ ...formData, leave_type_id: e.target.value })}
-              className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent outline-none"
+              className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent outline-none text-gray-900"
               required
             >
               <option value="">Select leave type...</option>
@@ -406,7 +406,7 @@ function ApplyLeaveModal({
                 value={formData.start_date}
                 onChange={(e) => setFormData({ ...formData, start_date: e.target.value })}
                 min={new Date().toISOString().split("T")[0]}
-                className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent outline-none"
+                className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent outline-none text-gray-900"
                 required
               />
             </div>
@@ -419,7 +419,7 @@ function ApplyLeaveModal({
                 value={formData.end_date}
                 onChange={(e) => setFormData({ ...formData, end_date: e.target.value })}
                 min={formData.start_date || new Date().toISOString().split("T")[0]}
-                className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent outline-none"
+                className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent outline-none text-gray-900"
                 required
               />
             </div>
@@ -433,7 +433,7 @@ function ApplyLeaveModal({
               value={formData.reason}
               onChange={(e) => setFormData({ ...formData, reason: e.target.value })}
               rows={3}
-              className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent outline-none resize-none"
+              className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent outline-none resize-none text-gray-900 placeholder:text-gray-500"
               placeholder="Optional reason for leave..."
             />
           </div>

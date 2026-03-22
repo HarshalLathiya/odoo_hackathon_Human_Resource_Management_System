@@ -94,3 +94,6 @@ npm run start
 ## License
 
 This project is private.
+
+⭐ **Star this repo if you like it!**
+🎉 *Create, Customize & Share with Ease* 🎉
